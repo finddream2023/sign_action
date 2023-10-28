@@ -2,7 +2,7 @@
 
 import sys
 
-sys.path.append("My-Actions/function/bilibili/")
+sys.path.append("sign_action/function/bilibili/")
 from bilibiliapi import *
 from sendNotify import *
 
