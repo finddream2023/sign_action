@@ -2,6 +2,7 @@
 
 import sys
 import random
+import time
 
 sys.path.append("sign_action/function/bilibili/")
 from bilibiliapi import *
