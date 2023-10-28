@@ -402,7 +402,7 @@ if __name__ == "__main__":
         SEND_KEY = ''
 
     # 随机延迟执行
-    rd = random.randint(1, 1800)
+    rd = random.randint(1, 1500)
     print('定时任务随机延迟后执行，请等待{}秒...'.format(rd))
     time.sleep(rd)
     
