@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import random
 
 sys.path.append("sign_action/function/bilibili/")
 from bilibiliapi import *
@@ -398,6 +399,12 @@ if __name__ == "__main__":
         SEND_KEY = os.environ['SEND_KEY']
     else:
         SEND_KEY = ''
+
+    # 随机延迟执行
+    rd = random.randint(1, 1800)
+    print('定时任务随机延迟后执行，请等待{}秒...'.format(rd))
+    time.sleep(rd)
+    
     # 未填写参数取消运行
     if os.environ.get('BILI_USER') and os.environ.get('BILI_PASS'):
         b = Bilibili()
